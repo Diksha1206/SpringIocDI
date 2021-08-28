@@ -4,7 +4,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class HelloSpringApp {
 
-    
+/*    
     public static void main(String[] args) {
 
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml"); 
@@ -15,4 +15,5 @@ public class HelloSpringApp {
         System.out.println(theCoach.getDailyFortune());
         context.close();
     } 
+    */
 }

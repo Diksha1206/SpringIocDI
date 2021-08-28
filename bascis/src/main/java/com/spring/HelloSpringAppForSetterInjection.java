@@ -8,7 +8,11 @@ public class HelloSpringAppForSetterInjection {
         
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        Coach myCoach = context.getBean("myNewCoach", Coach.class);
-        System.out.println(myCoach.getDailyWorkout());
+        //Coach myCricketCoach = context.getBean("myNewCoach", Coach.class);
+        
+        CricketCoach cricketCoach = context.getBean("myNewCoach", CricketCoach.class);
+        System.out.println(cricketCoach.getDailyWorkout());
+        cricketCoach.getEmailAddress();
+        cricketCoach.getTeam();
     }
 }
