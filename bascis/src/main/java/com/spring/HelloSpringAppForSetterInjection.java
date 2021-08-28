@@ -12,7 +12,8 @@ public class HelloSpringAppForSetterInjection {
         
         CricketCoach cricketCoach = context.getBean("myNewCoach", CricketCoach.class);
         System.out.println(cricketCoach.getDailyWorkout());
-        cricketCoach.getEmailAddress();
-        cricketCoach.getTeam();
+        System.out.println(cricketCoach.getEmailAddress());
+        System.out.println(cricketCoach.getTeam());
+        
     }
 }
